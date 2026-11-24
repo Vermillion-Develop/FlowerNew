@@ -29,8 +29,8 @@
                     </Style>
                  </ComboBox.Styles>
                <ComboBox.Resources>
-                    <SolidColorBrush x:Key="ComboBoxDropDownBackground" Color="#1E1E1E"/>
-                    <SolidColorBrush x:Key="ComboBoxDropDownBorderBrush" Color="#444444"/>
+                    <SolidColorBrush x:Key="ComboBoxDropDownBackground" Color="#FFFFFF"/>
+                    <SolidColorBrush x:Key="ComboBoxDropDownBorderBrush" Color="#D0D7DE"/>
                     <Thickness x:Key="ComboBoxDropdownHasPaddingThemeThickness">0</Thickness>
                     <SolidColorBrush x:Key="ComboBoxTemplatePanelBackground" Color="Transparent"/>
                 </ComboBox.Resources>
@@ -55,7 +55,7 @@
                                     <Button ZIndex="5" Background="Transparent" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Cursor="Hand" CommandParameter="{Binding}" Command="{Binding $parent[ListBox].DataContext.AddToKorzinaProductCommand}"/>
                                     <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Width="180" Height="180" Margin="15">
                                         <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding Name}"/>
-                                        <Image VerticalAlignment="Center" Width="50" Height="50" Source="{Binding DehashedImage}"/>
+                                        <Image VerticalAlignment="Center" Width="80" Height="80" Source="{Binding DehashedImage}"/>
                                         <TextBlock VerticalAlignment="Bottom" TextWrapping="Wrap"  Text="{Binding Cost}" HorizontalAlignment="Center"/>
                                     </Grid>
                                 </Grid>
